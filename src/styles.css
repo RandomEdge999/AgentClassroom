@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --app-bg: #f5f1ea;
+  --app-panel: rgba(248, 244, 237, 0.94);
+  --app-card: #f7f2eb;
+  --app-card-strong: rgba(255, 255, 255, 0.92);
+  --app-code-gutter: #f2ede5;
+  --app-text: #172033;
+  --app-muted: #6d7484;
+  --app-border: rgba(133, 140, 157, 0.18);
+  --app-border-strong: rgba(14, 116, 144, 0.42);
+  --app-accent: #0f766e;
+  --app-accent-strong: #115e59;
+  --app-disabled: #e7dfd4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(125, 211, 252, 0.14), transparent 28%),
+    radial-gradient(circle at left 20%, rgba(20, 184, 166, 0.12), transparent 24%),
+    linear-gradient(180deg, #f8f5ef 0%, #f2ece4 100%);
+  color: var(--app-text);
+  font-family: "Aptos", "Segoe UI", "Inter", system-ui, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.ide-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.ide-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ide-scroll::-webkit-scrollbar-thumb {
+  background: rgba(109, 116, 132, 0.32);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.ide-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(109, 116, 132, 0.48);
+}
